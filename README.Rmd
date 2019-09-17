@@ -1,0 +1,117 @@
+---
+title: "R Project Template - read me"
+author: "Igor Portnoy"
+date: "9/17/2019"
+output: html_document
+---
+
+
+### Basic reproducible data analysis workflow - principles 
+
+This repository contains materials for using an customizedR project template to distribute a reproducible data analysis project. Since it is structured as an R package all scripts can be saved as functions in /R, data stored in /data, and the documentaions stored in /man .
+
+The current template is a generic manuscript and could be used for draft versions of a manuscript or possible for pre-prints.
+
+
+### Good & consistent project organisation
+
+- Facilitates
+
+- Reproducibility
+  
+- Understanding by reviewers and collaborators (including yourself in a few months)
+  
+- Tool building and sharing
+  
+  
+### Rules for good project organisation
+
+
+> - All files in same directory
+
+> - Raw data kept in separate folder
+
+> - Clean data derived through scripts
+
+> - Functions independent from analysis scripts
+
+> - Functions well documented & tested
+
+> - Output disposable & separate from code
+
+> - Makefile runs analyses in appropriate order
+
+> - README file with overall project description
+
+> - Software dependencies under control
+
+
+### Advantages of R package structure
+
+> - Reproducibility
+
+> - Consistent, standard, streamlined organisation
+
+> - Promotes modular, well-documented and tested code
+
+> - Easy to share (zip, GitHub repo)
+
+> - Easy to install & run (Dependencies)
+
+
+
+### Files organisation
+
+
+<style type="text/css">
+
+body, td {
+   font-size: 14px;
+}
+code.r{
+  font-size: 20px;
+}
+pre {
+  font-size: 20px
+}
+</style>
+
+```
+Project Name
+
+|---data # Clean data (produced w/ script)
+|---raw_data # Original raw data
+|---man #documentation (w/ Roxygen)
+    |---generate documentaion for customized R functions
+    |---project documentaion
+|---R
+    |---get_data.R
+    |---Train_data.R
+    |---Test_data.R
+    |---make_report.R
+    |---help_fun.R
+|---scripts
+    |---someAnalysis.R 
+|---sql
+    |---data_script.sql
+|---run_all.R     # *** Most important file ***
+|---README.md    # *** description of content and guid to user***
+|---.Rprofile # define all inital dependencies 
+
+```
+
+### Sync repository with existing R project, Why use Git?
+
+One we have created the template now we will create a repository for the project and push our project. 
+
+> - It makes sharing your project easy.
+
+> - Any researcher can easily browse code, and read documentation (via Markdown). They can report bugs, suggest new features, and propose improvements to your code.
+
+> - Collaboratively write code with someone
+
+> - virsion control
+
+
+
+
