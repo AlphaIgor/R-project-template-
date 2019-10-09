@@ -2,6 +2,7 @@
 title: "R Project Template - read me"
 author: "Igor Portnoy"
 date: "9/17/2019"
+output:
   md_document:
     variant: markdown_github
 ---
