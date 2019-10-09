@@ -1,6 +1,6 @@
 .Rproj.user
 .Rhistory
-.RData
-.csv
-.xlsx
-.pdf
+*.RData
+*.csv
+*.xlsx
+*.pdf
