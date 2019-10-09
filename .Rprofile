@@ -33,12 +33,8 @@ options(width = 130)
 options(graphics.record=TRUE)
 
 .old <- getOption("defaultPackages")
-.new <- c("data.table","ggplot2","dplyr","magrittr","OctoR","plumber","microbenchmark")
+.new <- c("data.table","ggplot2","dplyr","magrittr","plumber","microbenchmark","glue")
 options(defaultPackages = c(.old,.new))
-
-
-
-
 
 
 
